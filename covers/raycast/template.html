@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #07080a; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #07080a; color: #f9f9f9;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 500; color: #FF6363; padding: 12px 32px; border: 2px solid rgba(255,99,99,0.25); border-radius: 12px; letter-spacing: 0.2px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(180deg, #FF6363, #cc3333); display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; box-shadow: 0 2px 8px rgba(255,99,99,0.3); }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #f9f9f9; letter-spacing: 0.2px; }
+.author-desc { font-size: 22px; font-weight: 400; color: #6a6b6c; letter-spacing: 0.2px; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; position: relative; }
+.hero::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,99,99,0.06) 0%, transparent 70%); top: 38%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+.hero .overline { font-size: 22px; font-weight: 500; letter-spacing: 3px; color: #6a6b6c; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 120px; font-weight: 600; line-height: 1.1; letter-spacing: -1px; margin: 0 0 36px 0; color: #ffffff; font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+.hero .subheadline { font-size: 32px; font-weight: 400; line-height: 1.5; color: #cecece; margin: 0 0 52px 0; max-width: 1100px; letter-spacing: 0.2px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #FF6363; color: #fff; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 500; padding: 16px 40px; border-radius: 12px; border: none; letter-spacing: 0.2px; }
+.cta-secondary { background: rgba(255,255,255,0.06); color: #f9f9f9; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 400; padding: 16px 40px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); letter-spacing: 0.2px; }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #101111; border-radius: 16px; padding: 48px 36px 44px; text-align: center; border: 1px solid rgba(255,255,255,0.06); box-shadow: inset 0 1px 0 rgba(255,255,255,0.04); }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 26px; font-weight: 500; line-height: 1.2; margin: 0 0 12px 0; color: #f9f9f9; letter-spacing: 0.2px; }
+.feature-desc { font-size: 19px; font-weight: 400; line-height: 1.5; color: #9c9c9d; margin: 0; letter-spacing: 0.2px; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid rgba(255,255,255,0.06); flex-shrink: 0; }
+.bottom-strip .tag { font-size: 16px; font-weight: 500; color: #6a6b6c; padding: 7px 20px; border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; letter-spacing: 0.2px; }
+.bottom-strip .tag.active { color: #FF6363; border-color: rgba(255,99,99,0.2); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.08</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Raycast<br>的设计语言<br>做封面</h1>
+    <p class="subheadline">深空蓝黑 × 珊瑚红点缀 × macOS 级精密阴影，像打开了一块瑞士腕表</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🌑</div><h3 class="feature-title">深空蓝黑</h3><p class="feature-desc">#07080a 偏蓝的近黑<br>像 macOS 原生暗色</p></div>
+    <div class="feature-card"><div class="feature-icon">🔴</div><h3 class="feature-title">珊瑚红点缀</h3><p class="feature-desc">#FF6363<br>不喧宾夺主 只做标点</p></div>
+    <div class="feature-card"><div class="feature-icon">🪟</div><h3 class="feature-title">玻璃质感</h3><p class="feature-desc">多层 inset 阴影<br>模拟物理按压深度</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">Apple</span><span class="tag">Claude</span><span class="tag">Figma</span><span class="tag active">Raycast</span><span class="tag">Airbnb</span>
+  </div>
+</div>
+</body>
+</html>

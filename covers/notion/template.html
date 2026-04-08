@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #ffffff; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #ffffff; color: rgba(0,0,0,0.95);
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #0075de; padding: 12px 32px; border: 2px solid rgba(0,117,222,0.25); border-radius: 980px; background: #f2f9ff; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 12px; background: #0075de; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: rgba(0,0,0,0.95); }
+.author-desc { font-size: 22px; font-weight: 400; color: #615d59; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+.hero .overline { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: #a39e98; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 700; line-height: 1.0; letter-spacing: -4px; margin: 0 0 36px 0; color: rgba(0,0,0,0.95); font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+.hero .subheadline { font-size: 34px; font-weight: 300; line-height: 1.4; color: #615d59; margin: 0 0 52px 0; max-width: 1000px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #0075de; color: #fff; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 600; padding: 18px 42px; border-radius: 8px; border: none; }
+.cta-secondary { background: transparent; color: #0075de; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #f6f5f4; border-radius: 12px; padding: 48px 36px 44px; text-align: center; box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.06); }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px 0; color: rgba(0,0,0,0.95); }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #615d59; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid rgba(0,0,0,0.06); flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #a39e98; padding: 7px 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 980px; }
+.bottom-strip .tag.active { color: #0075de; border-color: rgba(0,117,222,0.25); background: #f2f9ff; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.05</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Notion 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">暖调中性色 × 呢喃边框 × 纸张质感，最温暖的极简主义</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">📄</div><h3 class="feature-title">暖调白底</h3><p class="feature-desc">#f6f5f4 微黄暖白<br>纸张质感不是屏幕</p></div>
+    <div class="feature-card"><div class="feature-icon">〰️</div><h3 class="feature-title">呢喃边框</h3><p class="feature-desc">rgba(0,0,0,0.1)<br>1px 若有若无的分割</p></div>
+    <div class="feature-card"><div class="feature-icon">🔵</div><h3 class="feature-title">Notion 蓝</h3><p class="feature-desc">#0075de 唯一彩色<br>只给可交互元素</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">Apple</span><span class="tag">Claude</span><span class="tag">Figma</span><span class="tag active">Notion</span><span class="tag">Tesla</span>
+  </div>
+</div>
+</body>
+</html>

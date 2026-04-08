@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #ffffff; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #ffffff; color: #000000;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #000; padding: 12px 32px; border: 2px solid #000; border-radius: 980px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 50%; background: #000; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #000; }
+.author-desc { font-size: 22px; font-weight: 400; color: rgba(0,0,0,0.4); }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; position: relative; }
+.hero::before { content: ''; position: absolute; width: 1200px; height: 600px; background: linear-gradient(135deg, #0ACF83, #A259FF, #F24E1E, #FF7262, #1ABCFE); filter: blur(120px); opacity: 0.15; top: 50%; left: 50%; transform: translate(-50%, -60%); pointer-events: none; border-radius: 50%; }
+.hero .overline { font-size: 20px; font-weight: 500; letter-spacing: 4px; color: rgba(0,0,0,0.35); margin-bottom: 32px; text-transform: uppercase; font-family: monospace; }
+.hero .headline { font-size: 128px; font-weight: 300; line-height: 1.0; letter-spacing: -4px; margin: 0 0 36px 0; color: #000; font-family: 'Noto Sans SC', 'Inter', sans-serif; position: relative; }
+.hero .subheadline { font-size: 34px; font-weight: 300; line-height: 1.4; color: rgba(0,0,0,0.5); margin: 0 0 52px 0; max-width: 1000px; letter-spacing: -0.3px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #000; color: #fff; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 980px; border: none; }
+.cta-secondary { background: transparent; color: #000; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 400; padding: 18px 42px; border-radius: 980px; border: 2px solid rgba(0,0,0,0.15); }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #fff; border-radius: 24px; padding: 48px 36px 44px; text-align: center; border: 2px solid rgba(0,0,0,0.06); }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px 0; color: #000; }
+.feature-desc { font-size: 20px; font-weight: 300; line-height: 1.5; color: rgba(0,0,0,0.4); margin: 0; letter-spacing: -0.2px; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid rgba(0,0,0,0.06); flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: rgba(0,0,0,0.3); padding: 7px 20px; border: 1px solid rgba(0,0,0,0.08); border-radius: 980px; }
+.bottom-strip .tag.active { color: #000; border-color: #000; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.04</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">DESIGN SYSTEM BREAKDOWN</div>
+    <h1 class="headline">用 Figma 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">纯黑白界面 × 超轻字重 × 虹彩渐变光晕，设计工具界的白色画廊</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">⚫</div><h3 class="feature-title">纯黑白</h3><p class="feature-desc">界面只有 #000 和 #fff<br>色彩留给作品本身</p></div>
+    <div class="feature-card"><div class="feature-icon">🪶</div><h3 class="feature-title">超轻字重</h3><p class="feature-desc">weight 320-340<br>比 Regular 更轻的空灵感</p></div>
+    <div class="feature-card"><div class="feature-icon">🌈</div><h3 class="feature-title">虹彩渐变</h3><p class="feature-desc">绿·紫·橙·蓝·粉<br>Figma 五色光谱</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">Apple</span><span class="tag">Claude</span><span class="tag active">Figma</span><span class="tag">Notion</span><span class="tag">Tesla</span>
+  </div>
+</div>
+</body>
+</html>

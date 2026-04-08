@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #ffffff; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #ffffff; color: #222222;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #ff385c; padding: 14px 36px; border: 2px solid rgba(255,56,92,0.2); border-radius: 32px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #ff385c, #e00b41); display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #222222; }
+.author-desc { font-size: 22px; font-weight: 400; color: #6a6a6a; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+.hero .overline { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: #6a6a6a; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 700; line-height: 1.05; letter-spacing: -3px; margin: 0 0 36px 0; color: #222222; font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+.hero .subheadline { font-size: 34px; font-weight: 400; line-height: 1.4; color: #6a6a6a; margin: 0 0 52px 0; max-width: 1000px; letter-spacing: -0.3px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: linear-gradient(180deg, #ff385c, #e00b41); color: #fff; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 8px; border: none; }
+.cta-secondary { background: transparent; color: #222222; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 8px; border: 2px solid #222222; }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #ffffff; border-radius: 20px; padding: 48px 36px 44px; text-align: center; box-shadow: rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px; }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px 0; color: #222222; letter-spacing: -0.3px; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #6a6a6a; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid rgba(0,0,0,0.06); flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #6a6a6a; padding: 7px 20px; border: 1px solid rgba(0,0,0,0.08); border-radius: 32px; }
+.bottom-strip .tag.active { color: #ff385c; border-color: rgba(255,56,92,0.2); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.09</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Airbnb 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">Rausch 红 × 暖调近黑 × 三层柔光阴影，最温暖的科技品牌</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🏠</div><h3 class="feature-title">Rausch 红</h3><p class="feature-desc">#ff385c<br>以创始街道命名的品牌色</p></div>
+    <div class="feature-card"><div class="feature-icon">☁️</div><h3 class="feature-title">三层柔光</h3><p class="feature-desc">ring + blur + shadow<br>温暖的物理悬浮感</p></div>
+    <div class="feature-card"><div class="feature-icon">🧸</div><h3 class="feature-title">圆润亲切</h3><p class="feature-desc">8-32px 大圆角<br>Cereal 字体圆润字端</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">Apple</span><span class="tag">Claude</span><span class="tag">Pinterest</span><span class="tag">Raycast</span><span class="tag active">Airbnb</span>
+  </div>
+</div>
+</body>
+</html>

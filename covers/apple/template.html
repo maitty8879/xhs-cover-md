@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  background: #000000;
+  overflow: hidden;
+}
+
+.frame {
+  width: 1500px;
+  height: 2000px;
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top bar - series + author */
+.top-bar {
+  width: 100%;
+  padding: 48px 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.series-tag {
+  font-size: 30px;
+  font-weight: 600;
+  color: #2997ff;
+  letter-spacing: -0.2px;
+  padding: 14px 36px;
+  border: 2px solid rgba(41, 151, 255, 0.35);
+  border-radius: 980px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.author-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0071e3, #2997ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.author-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.author-name {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: -0.2px;
+}
+
+.author-desc {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: -0.1px;
+}
+
+/* Hero section */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 80px;
+  position: relative;
+}
+
+/* Subtle glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(0, 113, 227, 0.06) 0%, transparent 65%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  pointer-events: none;
+}
+
+.hero .overline {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.hero .headline {
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin: 0 0 36px 0;
+  background: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.55) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Noto Sans SC', 'Inter', sans-serif;
+}
+
+.hero .subheadline {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 52px 0;
+  max-width: 1000px;
+}
+
+/* CTA buttons */
+.cta-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cta-primary {
+  background: #0071e3;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 18px 42px;
+  border-radius: 980px;
+  border: none;
+  letter-spacing: -0.2px;
+  font-family: inherit;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #2997ff;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 18px 42px;
+  border-radius: 980px;
+  border: 1.5px solid rgba(41, 151, 255, 0.5);
+  letter-spacing: -0.2px;
+  font-family: inherit;
+}
+
+/* Feature grid */
+.features {
+  padding: 0 80px 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.feature-card {
+  background: #1d1d1f;
+  border-radius: 24px;
+  padding: 48px 36px 44px;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 52px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.feature-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin: 0 0 12px 0;
+  color: #ffffff;
+}
+
+.feature-desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0;
+}
+
+/* Bottom strip */
+.bottom-strip {
+  height: 72px;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  flex-shrink: 0;
+}
+
+.bottom-strip .tag {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: -0.1px;
+  padding: 7px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 980px;
+}
+
+.bottom-strip .tag.active {
+  color: #2997ff;
+  border-color: rgba(41, 151, 255, 0.25);
+}
+</style>
+</head>
+<body>
+<div class="frame">
+  <!-- Top bar: series + author -->
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.01</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Apple 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">拆解苹果官网设计规范，直接套用到你的小红书图文</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+
+  <!-- Feature cards -->
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <h3 class="feature-title">极致黑白</h3>
+      <p class="feature-desc">#000 与 #f5f5f7<br>交替的电影感节奏</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✦</div>
+      <h3 class="feature-title">唯一蓝色</h3>
+      <p class="feature-desc">#0071e3<br>全站仅一个强调色</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">Aa</div>
+      <h3 class="feature-title">SF Pro</h3>
+      <p class="feature-desc">负字距 · 1.07 行高<br>标题紧凑如机械切割</p>
+    </div>
+  </div>
+
+  <!-- Bottom tags -->
+  <div class="bottom-strip">
+    <span class="tag active">Apple</span>
+    <span class="tag">Stripe</span>
+    <span class="tag">Linear</span>
+    <span class="tag">Vercel</span>
+    <span class="tag">Notion</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #ffffff; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #ffffff; color: #171A20;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 500; color: #3E6AE1; padding: 12px 32px; border: 2px solid rgba(62,106,225,0.2); border-radius: 8px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 8px; background: #3E6AE1; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 500; color: #171A20; }
+.author-desc { font-size: 22px; font-weight: 400; color: #5C5E62; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 100px; }
+.hero .overline { font-size: 22px; font-weight: 500; letter-spacing: 3px; color: #5C5E62; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 500; line-height: 1.05; letter-spacing: -1px; margin: 0 0 36px 0; color: #171A20; font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+.hero .subheadline { font-size: 32px; font-weight: 400; line-height: 1.4; color: #393C41; margin: 0 0 52px 0; max-width: 1100px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #3E6AE1; color: #fff; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 500; padding: 18px 48px; border-radius: 8px; border: none; }
+.cta-secondary { background: transparent; color: #171A20; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 500; padding: 18px 48px; border-radius: 8px; border: 2px solid #171A20; }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #F4F4F4; border-radius: 8px; padding: 48px 36px 44px; text-align: center; }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 500; line-height: 1.2; margin: 0 0 12px 0; color: #171A20; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #5C5E62; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid #EEEEEE; flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #5C5E62; padding: 7px 20px; border: 1px solid #EEEEEE; border-radius: 8px; }
+.bottom-strip .tag.active { color: #3E6AE1; border-color: rgba(62,106,225,0.25); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.07</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Tesla 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">极致留白 × 单一蓝色 × 零装饰，产品即一切的激进克制</p>
+    <div class="cta-row">
+      <button class="cta-primary">Order Now →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🤍</div><h3 class="feature-title">极致留白</h3><p class="feature-desc">零阴影 · 零渐变 · 零边框<br>全靠产品图撑起一切</p></div>
+    <div class="feature-card"><div class="feature-icon">🔵</div><h3 class="feature-title">电光蓝</h3><p class="feature-desc">#3E6AE1<br>全站唯一彩色 只给 CTA</p></div>
+    <div class="feature-card"><div class="feature-icon">Aa</div><h3 class="feature-title">双字重</h3><p class="feature-desc">只用 400 和 500<br>没有粗体 没有戏剧感</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">Apple</span><span class="tag">Claude</span><span class="tag">Figma</span><span class="tag">Notion</span><span class="tag active">Tesla</span>
+  </div>
+</div>
+</body>
+</html>
