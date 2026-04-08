@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;-webkit-font-smoothing:antialiased;background:#121212;overflow:hidden}
+.frame{width:1500px;height:2000px;background:#121212;color:#fff;font-family:'Inter','Noto Sans SC',sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.top-bar{width:100%;padding:48px 80px 0;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;flex-shrink:0}
+.series-tag{font-size:28px;font-weight:600;color:#1ed760;padding:14px 36px;border:2px solid rgba(30,215,96,.25);border-radius:980px}
+.author-info{display:flex;align-items:center;gap:14px}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:#1ed760;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;color:#000;font-family:'Noto Sans SC'}
+.author-text{display:flex;flex-direction:column;gap:4px}
+.author-name{font-size:28px;font-weight:600;color:#fff}
+.author-desc{font-size:22px;font-weight:400;color:rgba(255,255,255,.5)}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px}
+.hero .overline{font-size:24px;font-weight:500;letter-spacing:2px;color:rgba(255,255,255,.4);margin-bottom:32px;text-transform:uppercase}
+.hero .headline{font-size:128px;font-weight:900;line-height:1.05;letter-spacing:-3px;margin:0 0 36px;color:#fff;font-family:'Noto Sans SC','Inter',sans-serif}
+.hero .subheadline{font-size:34px;font-weight:300;line-height:1.4;color:rgba(255,255,255,.5);margin:0 0 52px;max-width:1000px}
+.cta-row{display:flex;gap:20px}
+.cta-primary{background:#1ed760;color:#000;font-family:'Inter';font-size:22px;font-weight:700;padding:18px 42px;border-radius:980px;border:none}
+.cta-secondary{background:rgba(255,255,255,.07);color:#fff;font-family:'Inter';font-size:22px;font-weight:500;padding:18px 42px;border-radius:980px;border:none}
+.features{padding:0 80px 64px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex-shrink:0}
+.feature-card{background:#1f1f1f;border-radius:16px;padding:48px 36px 44px;text-align:center;box-shadow:rgba(0,0,0,.5) 0 8px 24px}
+.feature-icon{font-size:52px;margin-bottom:20px;line-height:1}
+.feature-title{font-size:28px;font-weight:700;line-height:1.2;margin:0 0 12px;color:#fff}
+.feature-desc{font-size:20px;font-weight:400;line-height:1.5;color:rgba(255,255,255,.5);margin:0}
+.bottom-strip{height:72px;padding:0 80px;display:flex;align-items:center;justify-content:center;gap:14px;border-top:1px solid rgba(255,255,255,.06);flex-shrink:0}
+.bottom-strip .tag{font-size:17px;font-weight:500;color:rgba(255,255,255,.3);padding:7px 20px;border:1px solid rgba(255,255,255,.08);border-radius:980px}
+.bottom-strip .tag.active{color:#1ed760;border-color:rgba(30,215,96,.25)}
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar"><span class="series-tag">大厂设计语言 · Vol.46</span><div class="author-info"><div class="author-avatar">元</div><div class="author-text"><span class="author-name">元气菌.AI</span><span class="author-desc">Learn in public 理念践行中</span></div></div></div>
+  <div class="hero"><div class="overline">Design System Breakdown</div><h1 class="headline">用 Spotify 的<br>设计语言<br>做封面</h1><p class="subheadline">炭黑剧场 × Spotify 绿 × 药丸几何，让封面像音箱一样有触感</p><div class="cta-row"><button class="cta-primary">获取模板 →</button><button class="cta-secondary">了解更多</button></div></div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🎵</div><h3 class="feature-title">炭黑剧场</h3><p class="feature-desc">#121212 UI 退入暗处<br>让内容成为唯一色彩</p></div>
+    <div class="feature-card"><div class="feature-icon">💚</div><h3 class="feature-title">Spotify 绿</h3><p class="feature-desc">#1ed760<br>永远是功能色 不是装饰</p></div>
+    <div class="feature-card"><div class="feature-icon">💊</div><h3 class="feature-title">药丸圆角</h3><p class="feature-desc">按钮/搜索框全部 500px+<br>像高端音响设备的旋钮</p></div>
+  </div>
+  <div class="bottom-strip"><span class="tag">Apple</span><span class="tag">Raycast</span><span class="tag active">Spotify</span><span class="tag">Uber</span><span class="tag">Vercel</span></div>
+</div>
+</body>
+</html>

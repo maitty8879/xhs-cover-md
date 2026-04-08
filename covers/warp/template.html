@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;-webkit-font-smoothing:antialiased;background:#1a1a19;overflow:hidden}
+.frame{width:1500px;height:2000px;background:#1a1a19;color:#faf9f6;font-family:'Inter','Noto Sans SC',sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.top-bar{width:100%;padding:48px 80px 0;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;flex-shrink:0}
+.series-tag{font-size:28px;font-weight:500;color:#faf9f6;padding:12px 32px;border:2px solid rgba(250,249,246,.15);border-radius:50px}
+.author-info{display:flex;align-items:center;gap:14px}
+.author-avatar{width:64px;height:64px;border-radius:50px;background:#353534;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;color:#faf9f6;font-family:'Noto Sans SC'}
+.author-text{display:flex;flex-direction:column;gap:4px}
+.author-name{font-size:28px;font-weight:500;color:#faf9f6}
+.author-desc{font-size:22px;font-weight:400;color:rgba(250,249,246,.35)}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px}
+.hero .overline{font-size:22px;font-weight:500;letter-spacing:2px;color:rgba(250,249,246,.3);margin-bottom:32px;text-transform:uppercase}
+.hero .headline{font-size:128px;font-weight:700;line-height:1.05;letter-spacing:-3px;margin:0 0 36px;color:#faf9f6;font-family:'Noto Sans SC','Inter',sans-serif}
+.hero .subheadline{font-size:32px;font-weight:300;line-height:1.4;color:rgba(250,249,246,.4);margin:0 0 52px;max-width:1100px}
+.cta-row{display:flex;gap:20px}
+.cta-primary{background:#353534;color:#faf9f6;font-family:'Inter';font-size:20px;font-weight:500;padding:18px 42px;border-radius:50px;border:none}
+.cta-secondary{background:transparent;color:rgba(250,249,246,.6);font-family:'Inter';font-size:20px;font-weight:400;padding:18px 42px;border-radius:50px;border:1px solid rgba(250,249,246,.1)}
+.features{padding:0 80px 64px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex-shrink:0}
+.feature-card{background:rgba(250,249,246,.03);border-radius:16px;padding:48px 36px 44px;text-align:center;border:1px solid rgba(250,249,246,.06)}
+.feature-icon{font-size:52px;margin-bottom:20px;line-height:1}
+.feature-title{font-size:26px;font-weight:600;line-height:1.2;margin:0 0 12px;color:#faf9f6}
+.feature-desc{font-size:19px;font-weight:400;line-height:1.5;color:rgba(250,249,246,.35);margin:0}
+.bottom-strip{height:72px;padding:0 80px;display:flex;align-items:center;justify-content:center;gap:14px;border-top:1px solid rgba(250,249,246,.06);flex-shrink:0}
+.bottom-strip .tag{font-size:17px;font-weight:500;color:rgba(250,249,246,.25);padding:7px 20px;border:1px solid rgba(250,249,246,.06);border-radius:50px}
+.bottom-strip .tag.active{color:#faf9f6;border-color:rgba(250,249,246,.2)}
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar"><span class="series-tag">大厂设计语言 · Vol.54</span><div class="author-info"><div class="author-avatar">元</div><div class="author-text"><span class="author-name">元气菌.AI</span><span class="author-desc">Learn in public 理念践行中</span></div></div></div>
+  <div class="hero"><div class="overline">Design System Breakdown</div><h1 class="headline">用 Warp 的<br>设计语言<br>做封面</h1><p class="subheadline">暖炭黑 × 羊皮纸白 × 近乎单色，像坐在深林篝火旁的终端</p><div class="cta-row"><button class="cta-primary">获取模板 →</button><button class="cta-secondary">了解更多</button></div></div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🪵</div><h3 class="feature-title">暖炭黑</h3><p class="feature-desc">不是冷蓝黑<br>是烤焦木头的暖调近黑</p></div>
+    <div class="feature-card"><div class="feature-icon">📃</div><h3 class="feature-title">羊皮纸白</h3><p class="feature-desc">#faf9f6 微奶油色文字<br>不是纯白 是柔化后的暖</p></div>
+    <div class="feature-card"><div class="feature-icon">🔇</div><h3 class="feature-title">零彩色</h3><p class="feature-desc">几乎单色的暖灰体系<br>没有强调色 只有温度</p></div>
+  </div>
+  <div class="bottom-strip"><span class="tag">Claude</span><span class="tag">Lovable</span><span class="tag">OpenCode</span><span class="tag">Raycast</span><span class="tag active">Warp</span></div>
+</div>
+</body>
+</html>

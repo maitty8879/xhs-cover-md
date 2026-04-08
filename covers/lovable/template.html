@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;-webkit-font-smoothing:antialiased;background:#f7f4ed;overflow:hidden}
+.frame{width:1500px;height:2000px;background:#f7f4ed;color:#1c1c1c;font-family:'Inter','Noto Sans SC',sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.top-bar{width:100%;padding:48px 80px 0;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;flex-shrink:0}
+.series-tag{font-size:28px;font-weight:600;color:#1c1c1c;padding:12px 32px;border:2px solid rgba(28,28,28,.4);border-radius:980px}
+.author-info{display:flex;align-items:center;gap:14px}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:#1c1c1c;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;color:#f7f4ed;font-family:'Noto Sans SC'}
+.author-text{display:flex;flex-direction:column;gap:4px}
+.author-name{font-size:28px;font-weight:600;color:#1c1c1c}
+.author-desc{font-size:22px;font-weight:400;color:rgba(28,28,28,.4)}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px}
+.hero .overline{font-size:24px;font-weight:500;letter-spacing:2px;color:rgba(28,28,28,.35);margin-bottom:32px;text-transform:uppercase}
+.hero .headline{font-size:128px;font-weight:600;line-height:1.05;letter-spacing:-4px;margin:0 0 36px;color:#1c1c1c;font-family:'Noto Sans SC','Inter',sans-serif}
+.hero .subheadline{font-size:34px;font-weight:300;line-height:1.4;color:rgba(28,28,28,.5);margin:0 0 52px;max-width:1000px}
+.cta-row{display:flex;gap:20px}
+.cta-primary{background:#1c1c1c;color:#f7f4ed;font-family:'Inter';font-size:22px;font-weight:500;padding:18px 42px;border-radius:980px;border:none}
+.cta-secondary{background:transparent;color:#1c1c1c;font-family:'Inter';font-size:22px;font-weight:500;padding:18px 42px;border-radius:980px;border:1.5px solid rgba(28,28,28,.4)}
+.features{padding:0 80px 64px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex-shrink:0}
+.feature-card{background:rgba(28,28,28,.03);border-radius:16px;padding:48px 36px 44px;text-align:center;border:1px solid #eceae4}
+.feature-icon{font-size:52px;margin-bottom:20px;line-height:1}
+.feature-title{font-size:28px;font-weight:700;line-height:1.2;margin:0 0 12px;color:#1c1c1c}
+.feature-desc{font-size:20px;font-weight:400;line-height:1.5;color:rgba(28,28,28,.45);margin:0}
+.bottom-strip{height:72px;padding:0 80px;display:flex;align-items:center;justify-content:center;gap:14px;border-top:1px solid #eceae4;flex-shrink:0}
+.bottom-strip .tag{font-size:17px;font-weight:500;color:rgba(28,28,28,.35);padding:7px 20px;border:1px solid #eceae4;border-radius:980px}
+.bottom-strip .tag.active{color:#1c1c1c;border-color:rgba(28,28,28,.4)}
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar"><span class="series-tag">大厂设计语言 · Vol.29</span><div class="author-info"><div class="author-avatar">元</div><div class="author-text"><span class="author-name">元气菌.AI</span><span class="author-desc">Learn in public 理念践行中</span></div></div></div>
+  <div class="hero"><div class="overline">Design System Breakdown</div><h1 class="headline">用 Lovable 的<br>设计语言<br>做封面</h1><p class="subheadline">羊皮纸暖白 × 透明度色阶 × 药丸按钮，最有手工感的科技品牌</p><div class="cta-row"><button class="cta-primary">获取模板 →</button><button class="cta-secondary">了解更多</button></div></div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">📜</div><h3 class="feature-title">羊皮纸底</h3><p class="feature-desc">#f7f4ed 暖奶油色<br>像手工笔记本 不像屏幕</p></div>
+    <div class="feature-card"><div class="feature-icon">👁️</div><h3 class="feature-title">透明度色阶</h3><p class="feature-desc">所有灰色都是 #1c1c1c<br>只调透明度 · 绝对统一</p></div>
+    <div class="feature-card"><div class="feature-icon">💊</div><h3 class="feature-title">药丸按钮</h3><p class="feature-desc">980px 大圆角<br>黑底奶油字 温暖又坚定</p></div>
+  </div>
+  <div class="bottom-strip"><span class="tag">Claude</span><span class="tag">Cursor</span><span class="tag active">Lovable</span><span class="tag">Notion</span><span class="tag">Warp</span></div>
+</div>
+</body>
+</html>

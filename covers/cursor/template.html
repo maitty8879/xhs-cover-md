@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #f2f1ed; overflow: hidden; }
+.frame { width: 1500px; height: 2000px; background: #f2f1ed; color: #26251e; font-family: 'Inter','Noto Sans SC',sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #f54e00; padding: 12px 32px; border: 2px solid rgba(245,78,0,0.25); border-radius: 9999px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 9999px; background: #f54e00; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC'; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #26251e; }
+.author-desc { font-size: 22px; font-weight: 400; color: rgba(38,37,30,0.55); }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+.hero .overline { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: rgba(38,37,30,0.55); margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 700; line-height: 1.05; letter-spacing: -3px; margin: 0 0 36px; color: #26251e; font-family: 'Noto Sans SC','Inter',sans-serif; }
+.hero .subheadline { font-size: 34px; font-weight: 300; line-height: 1.4; color: rgba(38,37,30,0.55); margin: 0 0 52px; max-width: 1000px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #f54e00; color: #fff; font-family: 'Inter'; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 9999px; border: none; }
+.cta-secondary { background: transparent; color: #f54e00; font-family: 'Inter'; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 9999px; border: 1.5px solid rgba(245,78,0,0.5); }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #e6e5e0; border-radius: 16px; padding: 48px 36px 44px; text-align: center; }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px; color: #26251e; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: rgba(38,37,30,0.55); margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid #e6e5e0; flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: rgba(38,37,30,0.55); padding: 7px 20px; border: 1px solid #e6e5e0; border-radius: 9999px; }
+.bottom-strip .tag.active { color: #f54e00; border-color: rgba(245,78,0,0.25); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.18</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Cursor 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">暖奶油底色配活力橙，三字体系统的温暖极简代码编辑器美学</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🟠</div><h3 class="feature-title">Cursor Orange</h3><p class="feature-desc">#f54e00 温暖而有冲击力的品牌橙</p></div>
+    <div class="feature-card"><div class="feature-icon">📜</div><h3 class="feature-title">暖色画布</h3><p class="feature-desc">#f2f1ed 奶油色底如高端印刷杂志</p></div>
+    <div class="feature-card"><div class="feature-icon">✒️</div><h3 class="feature-title">三字体系统</h3><p class="feature-desc">Gothic 展示 + Serif 正文 + Mono 代码</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">代码编辑器</span><span class="tag">暖色极简</span><span class="tag active">Cursor</span><span class="tag">AI 编程</span><span class="tag">oklab 边框</span>
+  </div>
+</div>
+</body>
+</html>

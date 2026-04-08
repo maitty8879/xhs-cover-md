@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1500">
+<title>Vol.39 — Replicate Design System Cover</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  html, body { margin:0; padding:0; background:#ffffff; overflow:hidden; }
+  .frame {
+    width:1500px; height:2000px; display:flex; flex-direction:column;
+    background:#ffffff; font-family:'basier-square','Inter',system-ui,sans-serif;
+    color:#202020; position:relative;
+  }
+  /* hero gradient accent bar */
+  .frame::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:12px;
+    background:linear-gradient(90deg, #ea2804 0%, #e0451a 30%, #d4225a 60%, #c4187a 80%, #ff6b9d 100%);
+    z-index:2;
+  }
+  .frame > * { position:relative; z-index:1; }
+  /* top-bar */
+  .top-bar {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:60px 64px 0 64px;
+  }
+  .series-tag {
+    background:#202020; color:#fcfcfc; font-size:28px; font-weight:700;
+    padding:14px 36px; border-radius:9999px; letter-spacing:0.5px;
+  }
+  .author {
+    font-size:26px; font-weight:500; color:#8d8d8d;
+  }
+  /* hero */
+  .hero {
+    flex:1; display:flex; flex-direction:column; justify-content:center;
+    padding:0 80px;
+  }
+  .overline {
+    font-size:26px; font-weight:600; color:#8d8d8d;
+    text-transform:uppercase; letter-spacing:4px; margin-bottom:32px;
+  }
+  .headline {
+    font-size:128px; font-weight:700; line-height:1.0;
+    color:#202020; margin-bottom:40px; white-space:pre-line;
+    font-family:'rb-freigeist-neue','Inter',system-ui,sans-serif;
+    letter-spacing:-1.8px;
+  }
+  .headline em {
+    font-style:normal;
+    background:linear-gradient(135deg, #ea2804 0%, #d4225a 50%, #ff6b9d 100%);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .subheadline {
+    font-size:34px; font-weight:400; color:#646464;
+    line-height:1.6; margin-bottom:56px; max-width:1100px;
+  }
+  .cta-row { display:flex; gap:24px; }
+  .cta-primary {
+    background:#202020; color:#fcfcfc; font-size:30px; font-weight:600;
+    padding:22px 56px; border-radius:9999px; border:none; cursor:pointer;
+  }
+  .cta-secondary {
+    background:#ffffff; color:#202020; font-size:30px; font-weight:600;
+    padding:22px 56px; border-radius:9999px; border:2px solid #dd4425; cursor:pointer;
+  }
+  /* features */
+  .features {
+    display:grid; grid-template-columns:repeat(3,1fr); gap:28px;
+    padding:0 64px; margin-bottom:40px;
+  }
+  .feature-card {
+    background:#fcfcfc; border:2px solid #e0e0e0; border-radius:9999px;
+    padding:44px 42px; display:flex; flex-direction:column; gap:14px;
+    align-items:center; text-align:center;
+  }
+  .feature-card .icon { font-size:42px; }
+  .feature-card h3 {
+    font-size:28px; font-weight:600; margin:0; color:#202020;
+  }
+  .feature-card p {
+    font-size:22px; font-weight:400; color:#646464; margin:0; line-height:1.5;
+  }
+  /* status dot */
+  .status-dot {
+    display:inline-block; width:12px; height:12px; background:#2b9a66;
+    border-radius:50%; margin-right:8px; vertical-align:middle;
+  }
+  /* bottom-strip */
+  .bottom-strip {
+    display:flex; gap:16px; padding:36px 64px 52px 64px;
+    flex-wrap:wrap;
+  }
+  .bottom-strip .tag {
+    background:#fcfcfc; border:2px solid #bbbbbb; border-radius:9999px;
+    padding:12px 32px; font-size:22px; font-weight:500; color:#4e4e4e;
+    text-transform:lowercase;
+  }
+  .bottom-strip .tag.accent {
+    background:#ea2804; border-color:#ea2804; color:#ffffff;
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag"><span class="status-dot"></span>Vol.39 · Design System Breakdown</span>
+    <span class="author">元气菌.AI</span>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <div class="headline">用 <em>Replicate</em> 的
+设计语言
+做封面</div>
+    <div class="subheadline">爆裂橙红渐变英雄区 · Freigeist Neue 128px 巨型排版 · 全药丸 9999px 圆角 · 开发者社区能量</div>
+    <div class="cta-row">
+      <button class="cta-primary">探索设计系统</button>
+      <button class="cta-secondary">查看源文件</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card">
+      <div class="icon">🔥</div>
+      <h3>爆裂渐变</h3>
+      <p>橙→红→品红→粉，像音乐节海报般炸裂</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">💊</div>
+      <h3>全药丸几何</h3>
+      <p>9999px 圆角贯穿一切，按钮、卡片、标签无一例外</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h3>巨型排版</h3>
+      <p>128px 标题 + -1.8px 紧凑字距，在屋顶呐喊的设计</p>
+    </div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag accent">#replicate</span>
+    <span class="tag">#designsystem</span>
+    <span class="tag">#gradient</span>
+    <span class="tag">#pillshape</span>
+    <span class="tag">#devtools</span>
+  </div>
+</div>
+</body>
+</html>

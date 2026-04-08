@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1500">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #faf9f7; overflow: hidden; margin: 0; padding: 0; }
+  .frame {
+    width: 1500px; height: 2000px;
+    background: #faf9f7;
+    display: flex; flex-direction: column;
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .top-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 48px 64px 0 64px;
+  }
+  .series-tag {
+    font-size: 22px; font-weight: 600;
+    color: #078a52;
+    border: 2px solid #078a52;
+    border-radius: 24px;
+    padding: 8px 24px;
+  }
+  .author-info {
+    font-size: 20px; font-weight: 400;
+    color: #9f9b93;
+  }
+  .author-info span { font-weight: 600; color: #000000; }
+
+  .hero {
+    flex: 1;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0 64px;
+    gap: 36px;
+  }
+  .overline {
+    font-size: 22px; font-weight: 600;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    color: #078a52;
+  }
+  .headline {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 128px; font-weight: 600;
+    line-height: 1.00;
+    color: #000000;
+    letter-spacing: -3.2px;
+    white-space: pre-line;
+  }
+  .subheadline {
+    font-size: 36px; font-weight: 400;
+    color: #9f9b93;
+    line-height: 1.5;
+  }
+  .cta-row { display: flex; gap: 20px; margin-top: 12px; }
+  .cta-primary {
+    font-size: 24px; font-weight: 500;
+    background: #ffffff; color: #000000;
+    padding: 18px 40px;
+    border-radius: 1584px; border: 1px solid #dad4c8;
+    box-shadow: rgba(0,0,0,0.1) 0px 1px 1px;
+    transition: transform 0.3s;
+  }
+  .cta-primary:hover {
+    transform: rotateZ(-8deg) translateY(-6px);
+    box-shadow: rgb(0,0,0) -7px 7px;
+  }
+  .cta-secondary {
+    font-size: 24px; font-weight: 500;
+    background: transparent; color: #000000;
+    padding: 18px 40px;
+    border-radius: 4px;
+    border: 1px dashed #dad4c8;
+  }
+
+  .features {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 64px 48px 64px;
+  }
+  .feature-card {
+    background: #ffffff;
+    border: 1px solid #dad4c8;
+    border-radius: 24px;
+    padding: 36px 32px;
+    box-shadow: rgba(0,0,0,0.1) 0px 1px 1px, rgba(0,0,0,0.04) 0px -1px 1px inset;
+  }
+  .feature-emoji { font-size: 44px; margin-bottom: 16px; }
+  .feature-title {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 28px; font-weight: 600;
+    margin-bottom: 12px; color: #000000;
+    letter-spacing: -0.64px;
+  }
+  .feature-desc {
+    font-size: 20px; font-weight: 400;
+    color: #55534e; line-height: 1.6;
+  }
+
+  .bottom-strip {
+    display: flex; gap: 16px;
+    padding: 36px 64px 48px 64px;
+    border-top: 1px solid #dad4c8;
+  }
+  .strip-tag {
+    font-size: 20px; font-weight: 500;
+    color: #9f9b93;
+    padding: 10px 24px;
+    border-radius: 1584px;
+    border: 1px solid #dad4c8;
+  }
+  .strip-tag.active {
+    background: #078a52; color: #ffffff;
+    border-color: #078a52;
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <div class="series-tag">Vol.13 · 设计系统拆解</div>
+    <div class="author-info"><span>元气菌.AI</span> · Learn in public 理念践行中</div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <div class="headline">用 Clay 的
+设计语言
+做封面</div>
+    <div class="subheadline">暖奶油画布 + 手工质感 + 俏皮悬停动画</div>
+    <div class="cta-row">
+      <div class="cta-primary">Matcha Green</div>
+      <div class="cta-secondary">Dashed Border</div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-emoji">🍵</div>
+      <div class="feature-title">果汁吧色板</div>
+      <div class="feature-desc">Matcha·Slushie·Lemon·Ube·Pomegranate，每种色彩都像一种口味</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-emoji">🎪</div>
+      <div class="feature-title">俏皮悬停动画</div>
+      <div class="feature-desc">rotateZ(-8deg) + 硬偏移阴影，按钮会倾斜跳跃，B2B 中罕见的趣味</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-emoji">📄</div>
+      <div class="feature-title">暖色燕麦边框</div>
+      <div class="feature-desc">#dad4c8 暖奶油色边框搭配虚线变体，手工纸张般的触感质地</div>
+    </div>
+  </div>
+  <div class="bottom-strip">
+    <div class="strip-tag">Airtable</div>
+    <div class="strip-tag">BMW</div>
+    <div class="strip-tag">Cal.com</div>
+    <div class="strip-tag active">Clay</div>
+    <div class="strip-tag">ClickHouse</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1500">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #ffffff; overflow: hidden; margin: 0; padding: 0; }
+  .frame {
+    width: 1500px; height: 2000px;
+    background: #ffffff;
+    display: flex; flex-direction: column;
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .top-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 48px 64px 0 64px;
+  }
+  .series-tag {
+    font-size: 22px; font-weight: 400;
+    color: #93939f;
+    border: 1px solid #d9d9dd;
+    border-radius: 22px;
+    padding: 8px 24px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    font-family: 'Inter', monospace;
+  }
+  .author-info {
+    font-size: 20px; font-weight: 400;
+    color: #93939f;
+  }
+  .author-info span { font-weight: 500; color: #000000; }
+
+  .hero {
+    flex: 1;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0 64px;
+    gap: 36px;
+  }
+  .overline {
+    font-size: 22px; font-weight: 400;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    color: #93939f;
+    font-family: 'Inter', monospace;
+  }
+  .headline {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 128px; font-weight: 400;
+    line-height: 1.00;
+    color: #000000;
+    letter-spacing: -2px;
+    white-space: pre-line;
+  }
+  .subheadline {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 36px; font-weight: 400;
+    color: #93939f;
+    line-height: 1.4;
+  }
+  .cta-row { display: flex; gap: 20px; margin-top: 12px; }
+  .cta-primary {
+    font-size: 24px; font-weight: 400;
+    background: transparent; color: #000000;
+    padding: 18px 40px;
+    border-radius: 9999px; border: 1px solid #d9d9dd;
+    transition: color 0.2s;
+  }
+  .cta-primary:hover { color: #1863dc; }
+  .cta-secondary {
+    font-size: 24px; font-weight: 400;
+    background: transparent; color: #93939f;
+    padding: 18px 40px;
+    border-radius: 9999px;
+    border: 1px solid #f2f2f2;
+  }
+
+  .features {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 64px 48px 64px;
+  }
+  .feature-card {
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    border-radius: 22px;
+    padding: 36px 32px;
+  }
+  .feature-emoji { font-size: 44px; margin-bottom: 16px; }
+  .feature-title {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 28px; font-weight: 400;
+    margin-bottom: 12px; color: #000000;
+    letter-spacing: -0.32px;
+  }
+  .feature-desc {
+    font-size: 20px; font-weight: 400;
+    color: #93939f; line-height: 1.5;
+  }
+
+  .bottom-strip {
+    display: flex; gap: 16px;
+    padding: 36px 64px 48px 64px;
+    border-top: 1px solid #d9d9dd;
+  }
+  .strip-tag {
+    font-size: 20px; font-weight: 400;
+    color: #93939f;
+    padding: 10px 24px;
+    border-radius: 22px;
+    border: 1px solid #d9d9dd;
+  }
+  .strip-tag.active {
+    background: #000000; color: #ffffff;
+    border-color: #000000;
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <div class="series-tag">Vol.15 · 设计系统拆解</div>
+    <div class="author-info"><span>元气菌.AI</span> · Learn in public 理念践行中</div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <div class="headline">用 Cohere 的
+设计语言
+做封面</div>
+    <div class="subheadline">衬线+无衬线双字体 · 22px 标志性圆角 · 企业级冷灰克制</div>
+    <div class="cta-row">
+      <div class="cta-primary">Ghost Button</div>
+      <div class="cta-secondary">22px Radius</div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-emoji">📖</div>
+      <div class="feature-title">衬线 + 无衬线</div>
+      <div class="feature-desc">CohereText 衬线用于宣言级标题，Unica77 瑞士几何无衬线处理功能文字</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-emoji">⭕</div>
+      <div class="feature-title">22px 签名圆角</div>
+      <div class="feature-desc">主要卡片、图片、容器统一 22px 圆角，创造云朵般的柔软包裹感</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-emoji">👻</div>
+      <div class="feature-title">幽灵按钮系统</div>
+      <div class="feature-desc">默认透明背景，悬停时文字转为 #1863dc 交互蓝，克制中见灵动</div>
+    </div>
+  </div>
+  <div class="bottom-strip">
+    <div class="strip-tag">Airtable</div>
+    <div class="strip-tag">BMW</div>
+    <div class="strip-tag">Cal.com</div>
+    <div class="strip-tag">Clay</div>
+    <div class="strip-tag active">Cohere</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1500">
+<title>Vol.36 — Ollama Design System Cover</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  html, body { margin:0; padding:0; background:#ffffff; overflow:hidden; }
+  .frame {
+    width:1500px; height:2000px; display:flex; flex-direction:column;
+    background:#ffffff; font-family:'SF Pro Rounded','Inter',system-ui,-apple-system,sans-serif;
+    color:#000000; position:relative;
+  }
+  /* top-bar */
+  .top-bar {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:48px 64px 0 64px;
+  }
+  .series-tag {
+    background:#000000; color:#ffffff; font-size:28px; font-weight:600;
+    padding:14px 36px; border-radius:9999px; letter-spacing:0.5px;
+  }
+  .author {
+    font-size:26px; font-weight:500; color:#737373;
+  }
+  /* hero */
+  .hero {
+    flex:1; display:flex; flex-direction:column; justify-content:center;
+    padding:0 80px;
+  }
+  .overline {
+    font-size:26px; font-weight:500; color:#a3a3a3;
+    text-transform:uppercase; letter-spacing:4px; margin-bottom:32px;
+  }
+  .headline {
+    font-size:128px; font-weight:500; line-height:1.05;
+    color:#000000; margin-bottom:40px; white-space:pre-line;
+  }
+  .subheadline {
+    font-size:34px; font-weight:400; color:#737373;
+    line-height:1.6; margin-bottom:56px; max-width:1100px;
+  }
+  .cta-row { display:flex; gap:24px; }
+  .cta-primary {
+    background:#000000; color:#ffffff; font-size:30px; font-weight:500;
+    padding:22px 56px; border-radius:9999px; border:none; cursor:pointer;
+  }
+  .cta-secondary {
+    background:#e5e5e5; color:#404040; font-size:30px; font-weight:500;
+    padding:22px 56px; border-radius:9999px; border:none; cursor:pointer;
+  }
+  /* features */
+  .features {
+    display:grid; grid-template-columns:repeat(3,1fr); gap:28px;
+    padding:0 64px; margin-bottom:40px;
+  }
+  .feature-card {
+    background:#fafafa; border:1.5px solid #e5e5e5; border-radius:12px;
+    padding:44px 36px; display:flex; flex-direction:column; gap:14px;
+  }
+  .feature-card .icon { font-size:42px; }
+  .feature-card h3 {
+    font-size:28px; font-weight:500; margin:0; color:#000000;
+  }
+  .feature-card p {
+    font-size:22px; font-weight:400; color:#737373; margin:0; line-height:1.5;
+  }
+  /* bottom-strip */
+  .bottom-strip {
+    display:flex; gap:16px; padding:36px 64px 52px 64px;
+    flex-wrap:wrap;
+  }
+  .bottom-strip .tag {
+    background:#fafafa; border:1.5px solid #e5e5e5; border-radius:9999px;
+    padding:12px 32px; font-size:22px; font-weight:500; color:#525252;
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">Vol.36 · Design System Breakdown</span>
+    <span class="author">元气菌.AI</span>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <div class="headline">用 Ollama 的
+设计语言
+做封面</div>
+    <div class="subheadline">极致灰度极简主义 · SF Pro Rounded 圆角几何 · 9999px 药丸形交互 · 零阴影零渐变</div>
+    <div class="cta-row">
+      <button class="cta-primary">探索设计系统</button>
+      <button class="cta-secondary">查看源文件</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card">
+      <div class="icon">⚪</div>
+      <h3>纯灰度系统</h3>
+      <p>零彩色、纯黑白灰，让内容成为唯一主角</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">💊</div>
+      <h3>药丸形几何</h3>
+      <p>9999px 圆角贯穿所有交互组件</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">✨</div>
+      <h3>极简哲学</h3>
+      <p>零阴影零装饰，每个像素都经得起审视</p>
+    </div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">#DesignSystem</span>
+    <span class="tag">#Ollama</span>
+    <span class="tag">#Grayscale</span>
+    <span class="tag">#Minimalism</span>
+    <span class="tag">#PillShape</span>
+  </div>
+</div>
+</body>
+</html>

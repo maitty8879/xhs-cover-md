@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1500">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #ffffff; overflow: hidden; margin: 0; padding: 0; }
+  .frame {
+    width: 1500px; height: 2000px;
+    background: #ffffff;
+    display: flex; flex-direction: column;
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    color: #242424;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .top-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 48px 64px 0 64px;
+  }
+  .series-tag {
+    font-size: 22px; font-weight: 600;
+    color: #242424;
+    border: 1px solid #242424;
+    border-radius: 8px;
+    padding: 8px 24px;
+    box-shadow: rgba(19,19,22,0.7) 0px 1px 5px -4px, rgba(34,42,53,0.08) 0px 0px 0px 1px;
+  }
+  .author-info {
+    font-size: 20px; font-weight: 400;
+    color: #898989;
+  }
+  .author-info span { font-weight: 600; color: #242424; }
+
+  .hero {
+    flex: 1;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0 64px;
+    gap: 36px;
+  }
+  .overline {
+    font-size: 22px; font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #898989;
+  }
+  .headline {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 128px; font-weight: 600;
+    line-height: 1.10;
+    color: #242424;
+    letter-spacing: -2px;
+    white-space: pre-line;
+  }
+  .subheadline {
+    font-size: 36px; font-weight: 400;
+    color: #898989;
+    line-height: 1.5;
+  }
+  .cta-row { display: flex; gap: 20px; margin-top: 12px; }
+  .cta-primary {
+    font-size: 24px; font-weight: 600;
+    background: #242424; color: #ffffff;
+    padding: 18px 40px;
+    border-radius: 8px; border: none;
+  }
+  .cta-secondary {
+    font-size: 24px; font-weight: 500;
+    background: #ffffff; color: #242424;
+    padding: 18px 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(19,19,22,0.7) 0px 1px 5px -4px, rgba(34,42,53,0.08) 0px 0px 0px 1px, rgba(34,42,53,0.05) 0px 4px 8px;
+  }
+
+  .features {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 64px 48px 64px;
+  }
+  .feature-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 36px 32px;
+    box-shadow: rgba(19,19,22,0.7) 0px 1px 5px -4px, rgba(34,42,53,0.08) 0px 0px 0px 1px, rgba(34,42,53,0.05) 0px 4px 8px;
+  }
+  .feature-emoji { font-size: 44px; margin-bottom: 16px; }
+  .feature-title {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 28px; font-weight: 600;
+    margin-bottom: 12px; color: #242424;
+  }
+  .feature-desc {
+    font-size: 20px; font-weight: 400;
+    color: #898989; line-height: 1.5;
+  }
+
+  .bottom-strip {
+    display: flex; gap: 16px;
+    padding: 36px 64px 48px 64px;
+    border-top: none;
+    box-shadow: rgba(34,42,53,0.08) 0px -1px 0px 0px;
+  }
+  .strip-tag {
+    font-size: 20px; font-weight: 500;
+    color: #898989;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    border: none;
+    box-shadow: rgba(34,42,53,0.08) 0px 0px 0px 1px;
+  }
+  .strip-tag.active {
+    background: #242424; color: #ffffff;
+    box-shadow: none;
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <div class="series-tag">Vol.12 · 设计系统拆解</div>
+    <div class="author-info"><span>元气菌.AI</span> · Learn in public 理念践行中</div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <div class="headline">用 Cal.com 的
+设计语言
+做封面</div>
+    <div class="subheadline">纯灰度美学 + 阴影即边框 + 极致黑白克制</div>
+    <div class="cta-row">
+      <div class="cta-primary">Monochrome</div>
+      <div class="cta-secondary">Shadow Border</div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-emoji">⬛</div>
+      <div class="feature-title">纯灰度色板</div>
+      <div class="feature-desc">刻意零色彩，仅靠黑白灰传递专业与克制，大胆来自对比而非颜色</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-emoji">🔲</div>
+      <div class="feature-title">Ring 阴影边框</div>
+      <div class="feature-desc">0px 0px 0px 1px 阴影替代 CSS border，更细腻的卡片边缘处理</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-emoji">💊</div>
+      <div class="feature-title">9999px 药丸圆角</div>
+      <div class="feature-desc">标签和徽章采用极致药丸形，按钮 8px，层次分明的圆角梯度</div>
+    </div>
+  </div>
+  <div class="bottom-strip">
+    <div class="strip-tag">Airtable</div>
+    <div class="strip-tag">BMW</div>
+    <div class="strip-tag active">Cal.com</div>
+    <div class="strip-tag">Clay</div>
+    <div class="strip-tag">ClickHouse</div>
+  </div>
+</div>
+</body>
+</html>

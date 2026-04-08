@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;-webkit-font-smoothing:antialiased;background:#fff;overflow:hidden}
+.frame{width:1500px;height:2000px;background:#fff;color:#1b1938;font-family:'Inter','Noto Sans SC',sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.top-bar{width:100%;padding:48px 80px 0;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;flex-shrink:0}
+.series-tag{font-size:28px;font-weight:600;color:#cbb7fb;padding:12px 32px;border:2px solid rgba(203,183,251,.35);border-radius:980px}
+.author-info{display:flex;align-items:center;gap:14px}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1b1938,#3a2d6e);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;color:#fff;font-family:'Noto Sans SC'}
+.author-text{display:flex;flex-direction:column;gap:4px}
+.author-name{font-size:28px;font-weight:600;color:#1b1938}
+.author-desc{font-size:22px;font-weight:400;color:rgba(27,25,56,.4)}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px}
+.hero .overline{font-size:24px;font-weight:500;letter-spacing:2px;color:rgba(27,25,56,.35);margin-bottom:32px;text-transform:uppercase}
+.hero .headline{font-size:120px;font-weight:700;line-height:1.05;letter-spacing:-3px;margin:0 0 36px;color:#1b1938;font-family:'Noto Sans SC','Inter',sans-serif}
+.hero .subheadline{font-size:34px;font-weight:300;line-height:1.4;color:rgba(27,25,56,.45);margin:0 0 52px;max-width:1000px}
+.cta-row{display:flex;gap:20px}
+.cta-primary{background:#e9e5dd;color:#1b1938;font-family:'Inter';font-size:22px;font-weight:600;padding:18px 42px;border-radius:980px;border:none}
+.cta-secondary{background:transparent;color:#1b1938;font-family:'Inter';font-size:22px;font-weight:500;padding:18px 42px;border-radius:980px;border:1.5px solid rgba(27,25,56,.15)}
+.features{padding:0 80px 64px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex-shrink:0}
+.feature-card{background:#fff;border-radius:16px;padding:48px 36px 44px;text-align:center;border:1px solid rgba(27,25,56,.06)}
+.feature-icon{font-size:52px;margin-bottom:20px;line-height:1}
+.feature-title{font-size:28px;font-weight:700;line-height:1.2;margin:0 0 12px;color:#1b1938}
+.feature-desc{font-size:20px;font-weight:400;line-height:1.5;color:rgba(27,25,56,.4);margin:0}
+.bottom-strip{height:72px;padding:0 80px;display:flex;align-items:center;justify-content:center;gap:14px;border-top:1px solid rgba(27,25,56,.06);flex-shrink:0}
+.bottom-strip .tag{font-size:17px;font-weight:500;color:rgba(27,25,56,.3);padding:7px 20px;border:1px solid rgba(27,25,56,.08);border-radius:980px}
+.bottom-strip .tag.active{color:#cbb7fb;border-color:rgba(203,183,251,.35)}
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar"><span class="series-tag">大厂设计语言 · Vol.49</span><div class="author-info"><div class="author-avatar">元</div><div class="author-text"><span class="author-name">元气菌.AI</span><span class="author-desc">Learn in public 理念践行中</span></div></div></div>
+  <div class="hero"><div class="overline">Design System Breakdown</div><h1 class="headline">用 Superhuman<br>的设计语言<br>做封面</h1><p class="subheadline">暮光紫 × 暖奶油按钮 × 极致克制，邮件客户端的奢侈品哲学</p><div class="cta-row"><button class="cta-primary">获取模板 →</button><button class="cta-secondary">了解更多</button></div></div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🌆</div><h3 class="feature-title">暮光紫</h3><p class="feature-desc">#1b1938 深邃暮色<br>像黎明前最深的紫</p></div>
+    <div class="feature-card"><div class="feature-icon">🍦</div><h3 class="feature-title">奶油按钮</h3><p class="feature-desc">#e9e5dd 不用鲜艳色<br>CTA 温暖内敛如信封</p></div>
+    <div class="feature-card"><div class="feature-icon">💜</div><h3 class="feature-title">薰衣草紫</h3><p class="feature-desc">#cbb7fb 唯一点缀色<br>柔和 · 可接近 · 不张扬</p></div>
+  </div>
+  <div class="bottom-strip"><span class="tag">Linear</span><span class="tag">Notion</span><span class="tag active">Superhuman</span><span class="tag">Stripe</span><span class="tag">Wise</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #0b0b0b; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #0b0b0b; color: #ffffff;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 400; color: #f36458; padding: 14px 36px; border: 2px solid rgba(243,100,88,0.25); border-radius: 99999px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #f36458, #0052ef); display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #ffffff; }
+.author-desc { font-size: 22px; font-weight: 400; color: #b9b9b9; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+.hero .overline { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: #797979; margin-bottom: 32px; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
+.hero .headline { font-size: 128px; font-weight: 400; line-height: 1.0; letter-spacing: -4px; margin: 0 0 36px 0; color: #ffffff; font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+.hero .subheadline { font-size: 34px; font-weight: 400; line-height: 1.4; color: #b9b9b9; margin: 0 0 52px 0; max-width: 1000px; letter-spacing: -0.3px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #f36458; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 99999px; border: none; }
+.cta-secondary { background: #0b0b0b; color: #b9b9b9; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 99999px; border: 1px solid #212121; }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #212121; border-radius: 6px; padding: 48px 36px 44px; text-align: center; border: 1px solid #353535; }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 500; line-height: 1.2; margin: 0 0 12px 0; color: #ffffff; letter-spacing: -0.3px; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #b9b9b9; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid #212121; flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #797979; padding: 7px 20px; border: 1px solid #353535; border-radius: 99999px; }
+.bottom-strip .tag.active { color: #f36458; border-color: rgba(243,100,88,0.35); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.43</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Sanity 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">珊瑚红 × 纯消色灰阶 × 暗夜控制台美学</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🎯</div><h3 class="feature-title">珊瑚红 CTA</h3><p class="feature-desc">#f36458 药丸按钮<br>hover 变电光蓝 #0052ef</p></div>
+    <div class="feature-card"><div class="feature-icon">⚫</div><h3 class="feature-title">消色灰阶</h3><p class="feature-desc">纯中性无偏色<br>#0b0b0b → #ffffff</p></div>
+    <div class="feature-card"><div class="feature-icon">⌨️</div><h3 class="feature-title">终端气质</h3><p class="feature-desc">IBM Plex Mono 大写标签<br>开发者控制台美学</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">Contentful</span><span class="tag">Strapi</span><span class="tag">Prismic</span><span class="tag">Hygraph</span><span class="tag active">Sanity</span>
+  </div>
+</div>
+</body>
+</html>

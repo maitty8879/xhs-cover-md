@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #ffffff; overflow: hidden; }
+.frame { width: 1500px; height: 2000px; background: #ffffff; color: #0a0b0d; font-family: 'Inter','Noto Sans SC',sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #0052ff; padding: 12px 32px; border: 2px solid rgba(0,82,255,0.25); border-radius: 56px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 50%; background: #0052ff; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC'; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #0a0b0d; }
+.author-desc { font-size: 22px; font-weight: 400; color: #5b616e; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+.hero .overline { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: #5b616e; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 700; line-height: 1.05; letter-spacing: -3px; margin: 0 0 36px; color: #0a0b0d; font-family: 'Noto Sans SC','Inter',sans-serif; }
+.hero .subheadline { font-size: 34px; font-weight: 300; line-height: 1.4; color: #5b616e; margin: 0 0 52px; max-width: 1000px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #0052ff; color: #fff; font-family: 'Inter'; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 56px; border: none; }
+.cta-secondary { background: transparent; color: #0052ff; font-family: 'Inter'; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 56px; border: 1.5px solid rgba(0,82,255,0.5); }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #eef0f3; border-radius: 16px; padding: 48px 36px 44px; text-align: center; }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px; color: #0a0b0d; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #5b616e; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid #eef0f3; flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #5b616e; padding: 7px 20px; border: 1px solid #eef0f3; border-radius: 56px; }
+.bottom-strip .tag.active { color: #0052ff; border-color: rgba(0,82,255,0.25); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.16</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Coinbase 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">蓝白双色金融级设计，56px 药丸按钮与专属四字体体系</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🔵</div><h3 class="feature-title">Coinbase Blue</h3><p class="feature-desc">#0052ff 单一品牌色贯穿全站交互</p></div>
+    <div class="feature-card"><div class="feature-icon">💊</div><h3 class="feature-title">药丸按钮</h3><p class="feature-desc">56px 圆角 pill 造型，金融级可信赖感</p></div>
+    <div class="feature-card"><div class="feature-icon">🔤</div><h3 class="feature-title">四字体系统</h3><p class="feature-desc">Display / Sans / Text / Icons 各司其职</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">金融科技</span><span class="tag">蓝白极简</span><span class="tag active">Coinbase</span><span class="tag">药丸按钮</span><span class="tag">加密货币</span>
+  </div>
+</div>
+</body>
+</html>

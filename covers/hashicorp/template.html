@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #15181e; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #15181e; color: #efeff1;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #7b42bc; padding: 12px 32px; border: 2px solid rgba(123,66,188,0.3); border-radius: 5px; text-transform: uppercase; letter-spacing: 1.3px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 5px; background: #7b42bc; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 500; color: #efeff1; }
+.author-desc { font-size: 22px; font-weight: 400; color: #656a76; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 100px; }
+.hero .overline { font-size: 22px; font-weight: 600; letter-spacing: 3px; color: #656a76; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 600; line-height: 1.05; letter-spacing: -1px; margin: 0 0 36px 0; color: #efeff1; font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+.hero .subheadline { font-size: 32px; font-weight: 400; line-height: 1.4; color: #656a76; margin: 0 0 52px 0; max-width: 1100px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #7b42bc; color: #fff; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 500; padding: 18px 48px; border-radius: 5px; border: none; }
+.cta-secondary { background: #ffffff; color: #3b3d45; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 500; padding: 18px 48px; border-radius: 4px; border: none; }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #0d0e12; border-radius: 8px; padding: 48px 36px 44px; text-align: center; box-shadow: rgba(97,104,117,0.05) 0px 1px 1px, rgba(97,104,117,0.05) 0px 2px 2px; border: 1px solid rgba(178,182,189,0.15); }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px 0; color: #efeff1; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #656a76; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid rgba(178,182,189,0.15); flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #656a76; padding: 7px 20px; border: 1px solid rgba(178,182,189,0.15); border-radius: 5px; }
+.bottom-strip .tag.active { color: #7b42bc; border-color: rgba(123,66,188,0.3); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.23</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 HashiCorp<br>的设计语言<br>做封面</h1>
+    <p class="subheadline">Terraform 紫 × 微语阴影 × 大写路标，基础设施级设计系统</p>
+    <div class="cta-row">
+      <button class="cta-primary">Get Started →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🟣</div><h3 class="feature-title">产品色谱</h3><p class="feature-desc">Terraform 紫 · Vault 黄<br>每个产品拥有自己的颜色</p></div>
+    <div class="feature-card"><div class="feature-icon">🔍</div><h3 class="feature-title">微语阴影</h3><p class="feature-desc">0.05 透明度双层阴影<br>看得见就算太重了</p></div>
+    <div class="feature-card"><div class="feature-icon">🔠</div><h3 class="feature-title">大写路标</h3><p class="feature-desc">13px 大写 · 1.3px 字距<br>像基建图纸的标注系统</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">IBM</span><span class="tag">Expo</span><span class="tag">Linear</span><span class="tag">Framer</span><span class="tag active">HashiCorp</span>
+  </div>
+</div>
+</body>
+</html>

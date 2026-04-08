@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #1f1633; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #1f1633; color: #ffffff;
+  font-family: 'Rubik', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #c2ef4e; padding: 14px 36px; border: 2px solid rgba(194,239,78,0.25); border-radius: 32px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #6a5fc1, #c2ef4e); display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #1f1633; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #ffffff; }
+.author-desc { font-size: 22px; font-weight: 400; color: #e5e7eb; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+.hero .overline { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: #e5e7eb; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 700; line-height: 1.05; letter-spacing: -3px; margin: 0 0 36px 0; color: #ffffff; font-family: 'Noto Sans SC', 'Rubik', sans-serif; }
+.hero .subheadline { font-size: 34px; font-weight: 400; line-height: 1.4; color: #e5e7eb; margin: 0 0 52px 0; max-width: 1000px; letter-spacing: -0.3px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: linear-gradient(180deg, #6a5fc1, #422082); color: #fff; font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 8px; border: none; text-transform: uppercase; letter-spacing: 0.2px; }
+.cta-secondary { background: rgba(255,255,255,0.18); color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.18); backdrop-filter: blur(18px); }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #362d59; border-radius: 20px; padding: 48px 36px 44px; text-align: center; box-shadow: rgba(22,15,36,0.9) 0px 4px 4px 9px; border: 1px solid rgba(106,95,193,0.15); }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px 0; color: #ffffff; letter-spacing: -0.3px; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #e5e7eb; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid rgba(255,255,255,0.06); flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #e5e7eb; padding: 7px 20px; border: 1px solid rgba(255,255,255,0.08); border-radius: 32px; }
+.bottom-strip .tag.active { color: #c2ef4e; border-color: rgba(194,239,78,0.25); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.44</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Sentry 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">深紫暗夜 × 酸橙绿高光 × 毛玻璃按钮，为深夜 Debug 而生的暗色美学</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🟣</div><h3 class="feature-title">深紫暗夜</h3><p class="feature-desc">#1f1633<br>不是纯黑，是温暖的紫黑色</p></div>
+    <div class="feature-card"><div class="feature-icon">🟢</div><h3 class="feature-title">酸橙绿 CTA</h3><p class="feature-desc">#c2ef4e<br>暗色中最抢眼的高能信号</p></div>
+    <div class="feature-card"><div class="feature-icon">🧊</div><h3 class="feature-title">毛玻璃质感</h3><p class="feature-desc">blur(18px) saturate(180%)<br>按钮如悬浮在紫色雾气中</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">SpaceX</span><span class="tag">Spotify</span><span class="tag">Stripe</span><span class="tag">Supabase</span><span class="tag active">Sentry</span>
+  </div>
+</div>
+</body>
+</html>

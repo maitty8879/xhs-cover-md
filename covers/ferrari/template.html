@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #000000; overflow: hidden; }
+.frame {
+  width: 1500px; height: 2000px; background: #000000; color: #ffffff;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+}
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 500; color: #DA291C; padding: 12px 32px; border: 2px solid rgba(218,41,28,0.25); border-radius: 2px; letter-spacing: 1px; text-transform: uppercase; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 2px; background: #DA291C; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC', sans-serif; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 500; color: #ffffff; }
+.author-desc { font-size: 22px; font-weight: 400; color: #8F8F8F; letter-spacing: 1px; text-transform: uppercase; }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 100px; }
+.hero .overline { font-size: 22px; font-weight: 400; letter-spacing: 3px; color: #8F8F8F; margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 500; line-height: 1.05; letter-spacing: -1px; margin: 0 0 36px 0; color: #ffffff; font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+.hero .subheadline { font-size: 32px; font-weight: 400; line-height: 1.4; color: #8F8F8F; margin: 0 0 52px 0; max-width: 1100px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #DA291C; color: #fff; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 500; padding: 18px 48px; border-radius: 2px; border: none; letter-spacing: 1.28px; }
+.cta-secondary { background: transparent; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 500; padding: 18px 48px; border-radius: 2px; border: 1px solid #ffffff; }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #303030; border-radius: 2px; padding: 48px 36px 44px; text-align: center; border: none; }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 500; line-height: 1.2; margin: 0 0 12px 0; color: #ffffff; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: #8F8F8F; margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid #303030; flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: #666666; padding: 7px 20px; border: 1px solid #303030; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+.bottom-strip .tag.active { color: #DA291C; border-color: rgba(218,41,28,0.3); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.21</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Ferrari 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">Rosso Corsa × 明暗交替 × 2px 刀锋，赛道基因的编辑美学</p>
+    <div class="cta-row">
+      <button class="cta-primary">Subscribe →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🔴</div><h3 class="feature-title">克制红</h3><p class="feature-desc">#DA291C 只给 CTA<br>红色越少 权威越重</p></div>
+    <div class="feature-card"><div class="feature-icon">🌓</div><h3 class="feature-title">明暗交替</h3><p class="feature-desc">纯黑与纯白交替<br>像翻阅一本奢侈年鉴</p></div>
+    <div class="feature-card"><div class="feature-icon">✂️</div><h3 class="feature-title">2px 刀锋</h3><p class="feature-desc">按钮圆角仅 2px<br>精密工程 不容圆滑</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">Expo</span><span class="tag">Kraken</span><span class="tag">IBM</span><span class="tag">Lambo</span><span class="tag active">Ferrari</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;-webkit-font-smoothing:antialiased;background:#1f2228;overflow:hidden}
+.frame{width:1500px;height:2000px;background:#1f2228;color:#fff;font-family:'IBM Plex Mono','Noto Sans SC',monospace;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.top-bar{width:100%;padding:48px 80px 0;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;flex-shrink:0}
+.series-tag{font-size:26px;font-weight:500;color:#fff;padding:12px 32px;border:1.5px solid rgba(255,255,255,.2);border-radius:0}
+.author-info{display:flex;align-items:center;gap:14px}
+.author-avatar{width:64px;height:64px;border-radius:0;background:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;color:#1f2228;font-family:'Noto Sans SC'}
+.author-text{display:flex;flex-direction:column;gap:4px}
+.author-name{font-size:28px;font-weight:500;color:#fff}
+.author-desc{font-size:22px;font-weight:400;color:rgba(255,255,255,.35)}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px}
+.hero .overline{font-size:20px;font-weight:400;letter-spacing:4px;color:rgba(255,255,255,.25);margin-bottom:32px;text-transform:uppercase}
+.hero .headline{font-size:120px;font-weight:700;line-height:1.05;letter-spacing:-2px;margin:0 0 36px;color:#fff;font-family:'Noto Sans SC','IBM Plex Mono',sans-serif}
+.hero .subheadline{font-size:30px;font-weight:300;line-height:1.5;color:rgba(255,255,255,.4);margin:0 0 52px;max-width:1100px}
+.cta-row{display:flex;gap:20px}
+.cta-primary{background:#fff;color:#1f2228;font-family:'IBM Plex Mono';font-size:18px;font-weight:500;padding:18px 42px;border-radius:0;border:none;text-transform:uppercase;letter-spacing:2px}
+.cta-secondary{background:transparent;color:#fff;font-family:'IBM Plex Mono';font-size:18px;font-weight:400;padding:18px 42px;border-radius:0;border:1.5px solid rgba(255,255,255,.2);text-transform:uppercase;letter-spacing:1px}
+.features{padding:0 80px 64px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex-shrink:0}
+.feature-card{background:transparent;border-radius:0;padding:48px 36px 44px;text-align:center;border:1px solid rgba(255,255,255,.1)}
+.feature-icon{font-size:52px;margin-bottom:20px;line-height:1}
+.feature-title{font-size:24px;font-weight:600;line-height:1.2;margin:0 0 12px;color:#fff;text-transform:uppercase;letter-spacing:1px}
+.feature-desc{font-size:18px;font-weight:400;line-height:1.5;color:rgba(255,255,255,.35);margin:0}
+.bottom-strip{height:72px;padding:0 80px;display:flex;align-items:center;justify-content:center;gap:14px;border-top:1px solid rgba(255,255,255,.08);flex-shrink:0}
+.bottom-strip .tag{font-size:16px;font-weight:500;color:rgba(255,255,255,.25);padding:7px 20px;border:1px solid rgba(255,255,255,.08);border-radius:0;text-transform:uppercase;letter-spacing:1px}
+.bottom-strip .tag.active{color:#fff;border-color:rgba(255,255,255,.3)}
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar"><span class="series-tag">大厂设计语言 · Vol.57</span><div class="author-info"><div class="author-avatar">元</div><div class="author-text"><span class="author-name">元气菌.AI</span><span class="author-desc">Learn in public 理念践行中</span></div></div></div>
+  <div class="hero"><div class="overline">Design System Breakdown</div><h1 class="headline">用 xAI 的<br>设计语言<br>做封面</h1><p class="subheadline">暗色粗野主义 × 零装饰 × 等宽字体，工程师审美的终极克制</p><div class="cta-row"><button class="cta-primary">获取模板 →</button><button class="cta-secondary">了解更多</button></div></div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🚫</div><h3 class="feature-title">零装饰</h3><p class="feature-desc">没有阴影 没有渐变<br>没有彩色 什么都没有</p></div>
+    <div class="feature-card"><div class="feature-icon">⬜</div><h3 class="feature-title">纯黑白</h3><p class="feature-desc">#1f2228 + #ffffff<br>没有灰色中间地带</p></div>
+    <div class="feature-card"><div class="feature-icon">⌨️</div><h3 class="feature-title">等宽字体</h3><p class="feature-desc">全站 Monospace<br>像终端一样直接</p></div>
+  </div>
+  <div class="bottom-strip"><span class="tag">OpenCode</span><span class="tag">SpaceX</span><span class="tag">Together</span><span class="tag active">xAI</span><span class="tag">Warp</span></div>
+</div>
+</body>
+</html>

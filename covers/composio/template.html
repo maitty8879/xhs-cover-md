@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; background: #0f0f0f; overflow: hidden; }
+.frame { width: 1500px; height: 2000px; background: #0f0f0f; color: #ffffff; font-family: 'Inter','Noto Sans SC',sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.top-bar { width: 100%; padding: 48px 80px 0; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; flex-shrink: 0; }
+.series-tag { font-size: 28px; font-weight: 600; color: #00ffff; padding: 12px 32px; border: 2px solid rgba(0,255,255,0.25); border-radius: 12px; }
+.author-info { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 12px; background: #0007cd; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700; color: #fff; font-family: 'Noto Sans SC'; }
+.author-text { display: flex; flex-direction: column; gap: 4px; }
+.author-name { font-size: 28px; font-weight: 600; color: #ffffff; }
+.author-desc { font-size: 22px; font-weight: 400; color: rgba(255,255,255,0.5); }
+.hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+.hero .overline { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: rgba(255,255,255,0.5); margin-bottom: 32px; text-transform: uppercase; }
+.hero .headline { font-size: 128px; font-weight: 700; line-height: 1.05; letter-spacing: -3px; margin: 0 0 36px; color: #ffffff; font-family: 'Noto Sans SC','Inter',sans-serif; }
+.hero .subheadline { font-size: 34px; font-weight: 300; line-height: 1.4; color: rgba(255,255,255,0.6); margin: 0 0 52px; max-width: 1000px; }
+.cta-row { display: flex; gap: 20px; }
+.cta-primary { background: #0007cd; color: #fff; font-family: 'Inter'; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 12px; border: none; }
+.cta-secondary { background: transparent; color: #00ffff; font-family: 'Inter'; font-size: 22px; font-weight: 500; padding: 18px 42px; border-radius: 12px; border: 1.5px solid rgba(0,255,255,0.5); }
+.features { padding: 0 80px 64px; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; flex-shrink: 0; }
+.feature-card { background: #000000; border-radius: 16px; padding: 48px 36px 44px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
+.feature-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.feature-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 0 0 12px; color: #ffffff; }
+.feature-desc { font-size: 20px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.5); margin: 0; }
+.bottom-strip { height: 72px; padding: 0 80px; display: flex; align-items: center; justify-content: center; gap: 14px; border-top: 1px solid rgba(255,255,255,0.1); flex-shrink: 0; }
+.bottom-strip .tag { font-size: 17px; font-weight: 500; color: rgba(255,255,255,0.5); padding: 7px 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; }
+.bottom-strip .tag.active { color: #00ffff; border-color: rgba(0,255,255,0.25); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top-bar">
+    <span class="series-tag">大厂设计语言 · Vol.17</span>
+    <div class="author-info">
+      <div class="author-avatar">元</div>
+      <div class="author-text">
+        <span class="author-name">元气菌.AI</span>
+        <span class="author-desc">Learn in public 理念践行中</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="overline">Design System Breakdown</div>
+    <h1 class="headline">用 Composio 的<br>设计语言<br>做封面</h1>
+    <p class="subheadline">深渊黑底配电光青，开发者终端美学的暗夜指挥中心</p>
+    <div class="cta-row">
+      <button class="cta-primary">获取模板 →</button>
+      <button class="cta-secondary">了解更多</button>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🌊</div><h3 class="feature-title">深渊钴蓝</h3><p class="feature-desc">#0007cd 品牌色克制而深邃</p></div>
+    <div class="feature-card"><div class="feature-icon">⚡</div><h3 class="feature-title">电光青辉</h3><p class="feature-desc">#00ffff 生物荧光般的高亮信号</p></div>
+    <div class="feature-card"><div class="feature-icon">🖥️</div><h3 class="feature-title">终端美学</h3><p class="feature-desc">JetBrains Mono + 极紧行高 0.87</p></div>
+  </div>
+  <div class="bottom-strip">
+    <span class="tag">开发者工具</span><span class="tag">暗色系</span><span class="tag active">Composio</span><span class="tag">终端美学</span><span class="tag">AI 集成</span>
+  </div>
+</div>
+</body>
+</html>
